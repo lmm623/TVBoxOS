@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://am.adianshi.com:9805/.aming/TVBOX/tvbox.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://am.adianshi.com:8040/tvbox/amingtvbox/tvbox.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
